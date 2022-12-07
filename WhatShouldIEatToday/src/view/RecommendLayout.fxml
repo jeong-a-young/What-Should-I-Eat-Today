@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="570.0" prefWidth="500.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="120.0" prefWidth="475.0" styleClass="mainContainer">
+         <children>
+            <Label layoutX="80.0" layoutY="15.0" text="아래에 원하시는 조건을 눌러주시면">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="48.0" text="조건과 제일 일치하는 음식을">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="81.0" text="추천해 드립니다.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="changeMainBtn" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeMain" styleClass="subBtn" text="이전">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="143.0" prefHeight="200.0" prefWidth="475.0" styleClass="mainContainer">
+         <children>
+            <Pane layoutX="10.0" layoutY="9.0" prefHeight="55.0" prefWidth="455.0" styleClass="subContainer">
+               <children>
+                  <Button layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeFamily" prefHeight="34.0" prefWidth="105.0" styleClass="conditionBtn" text="가족과 함께" />
+                  <Button layoutX="128.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeFriend" prefHeight="34.0" prefWidth="105.0" styleClass="conditionBtn" text="친구랑 같이" />
+                  <Button layoutX="243.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeLover" prefHeight="34.0" prefWidth="198.0" styleClass="conditionBtn" text="데이트나 소개팅을 할 때" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="73.0" prefHeight="55.0" prefWidth="455.0" styleClass="subContainer">
+               <children>
+                  <Button layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeMeal" prefHeight="34.0" prefWidth="128.0" styleClass="conditionBtn" text="제대로 된 식사" />
+                  <Button layoutX="152.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeFastfood" prefHeight="34.0" prefWidth="191.0" styleClass="conditionBtn" text="돈이 없을 때 간단한 식사" />
+                  <Button layoutX="354.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeDessert" prefHeight="34.0" prefWidth="86.0" styleClass="conditionBtn" text="디저트" />
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="138.0" prefHeight="55.0" prefWidth="455.0" styleClass="subContainer">
+               <children>
+                  <Button layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeKorea" prefHeight="34.0" prefWidth="53.0" styleClass="conditionBtn" text="한식" />
+                  <Button layoutX="78.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeChina" prefHeight="34.0" prefWidth="53.0" styleClass="conditionBtn" text="중식" />
+                  <Button layoutX="144.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeJapan" prefHeight="34.0" prefWidth="53.0" styleClass="conditionBtn" text="일식" />
+                  <Button layoutX="210.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeWestern" prefHeight="34.0" prefWidth="53.0" styleClass="conditionBtn" text="양식" />
+                  <Button layoutX="276.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeRandom" prefHeight="34.0" prefWidth="165.0" styleClass="conditionBtn" text="조건 상관없이 랜덤" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <BorderPane fx:id="resultPane" layoutX="14.0" layoutY="353.0" prefHeight="200.0" prefWidth="475.0" styleClass="mainContainer" />
+   </children>
+</AnchorPane>

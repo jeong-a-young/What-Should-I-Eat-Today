@@ -1,0 +1,86 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.mainContainer {
+	-fx-background-color : rgba(245.0, 245.0, 245.0, 0.7);
+	-fx-background-radius: 10.0px;
+}
+
+.subContainer {
+	-fx-background-color : rgba(216.0, 220.0, 216.0, 0.3);
+	-fx-background-radius: 10.0px;
+}
+
+.mainBtn {
+	-fx-background-color: #8fbc8f;
+	-fx-background-radius: 5.0px;
+	-fx-border-color: #8f9ea0;
+	-fx-border-radius: 5.0px;
+	-fx-font-size: 20.0pt;
+	-fx-text-fill: #fff;
+	-fx-padding: 8.0px 12.0px;
+	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.2), 3.0, 0.0, 3.0, 2.0);
+}
+
+.mainBtn:hover {
+	-fx-background-color: #75a876;
+	-fx-border-color: #879597;
+	-fx-effect: innershadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.3), 5.0, 0.0, 3.0, 2.0);
+}
+
+.subBtn {
+	-fx-background-color: #8fbc8f;
+	-fx-background-radius: 5.0px;
+	-fx-border-color: #8f9ea0;
+	-fx-border-radius: 5.0px;
+	-fx-font-size: 12.0pt;
+	-fx-text-fill: #fff;
+	-fx-padding: 8.0px 12.0px;
+}
+
+.subBtn:hover {
+	-fx-background-color: #75a876;
+	-fx-border-color: #879597;
+}
+
+.conditionBtn{
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.6), 3.0, 0.0, 0.0, 1.0);
+}
+
+.conditionBtn:hover {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-effect: innershadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.7), 7.0, 0.0, 1.0, 1.0);
+}
+
+#mainPane {
+	-fx-background-image : url(/resources/background.jpeg);
+	-fx-background-size : cover;
+	-fx-background-position: center center;
+}
+
+#mainLabel {
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(darkgreen, lightgreen);
+    -fx-effect: innershadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.7), 3.0, 0.0, 2.0, 2.1);
+}
+
+#countBox {
+	-fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230 ,230, 0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.6), 3.0, 0.0, 0.0, 1.0);
+}
